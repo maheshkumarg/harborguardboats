@@ -1,0 +1,341 @@
+
+/* fix yui base problems */
+#filemanager ul { margin: 0; }
+#filemanager li { list-style: none; }
+/* end yui base fix */
+
+#tabview { visibility: hidden; }
+#tabview .yui-nav { margin: 0; }
+
+#tabview.yui-navset .yui-nav li.disabled a {
+	color: #ccc;
+}
+#tabview.yui-navset .yui-nav li.disabled a:hover {
+	cursor: default;
+	background-position: 0 -200px !important;
+}
+
+#file_top {
+	position: relative;
+}
+#file_top #act_throbber {
+	position: absolute;
+	top: 1px;
+	right: 1px;
+}
+#file_top #act_throbber img {
+	width: 28px;
+	height: 28px;
+}
+#fldr_tlbr, #file_tlbr {
+	height: 23px;
+	padding: 3px 3px 4px;
+	background: #fff;
+	outline: 0;
+}
+#fldr_ftp,
+#file_srch {
+	height: 32px;
+	padding-top: 1px;
+	background: #d8d8d8;
+	overflow: hidden;
+}
+#fldr_tlbr.yui-toolbar-container .yui-push-button .yui-toolbar-icon,
+#file_tlbr.yui-toolbar-container .yui-push-button .yui-toolbar-icon,
+#conn_top_tlbr.yui-toolbar-container .yui-push-button .yui-toolbar-icon,
+#tpl_top_tlbr.yui-toolbar-container .yui-push-button .yui-toolbar-icon {
+	background: url(/controlpanel/FileManager/styles/sprite.png) no-repeat scroll 0 0;
+	margin-left: 5px
+}
+#fldr_tlbr.yui-toolbar-container .yui-toolbar-new .yui-toolbar-icon { background-position: -3px -1px; }
+#fldr_tlbr.yui-toolbar-container .yui-toolbar-delete .yui-toolbar-icon { background-position: -24px -1px; }
+#fldr_tlbr.yui-toolbar-container .yui-toolbar-permissions .yui-toolbar-icon { background-position: -45px 0px; }
+#fldr_tlbr.yui-toolbar-container .yui-toolbar-refresh .yui-toolbar-icon { background-position: -64px 0px; }
+#file_tlbr.yui-toolbar-container .yui-toolbar-upload .yui-toolbar-icon { background-position: -85px 0px; }
+#file_tlbr.yui-toolbar-container .yui-toolbar-new .yui-toolbar-icon { background-position: -105px 0px; }
+#file_tlbr.yui-toolbar-container .yui-toolbar-refresh .yui-toolbar-icon { background-position: -64px 0px; }
+#file_tlbr.yui-toolbar-container .yui-toolbar-copy .yui-toolbar-icon { background-position: -126px 0px; }
+#file_tlbr.yui-toolbar-container .yui-toolbar-move .yui-toolbar-icon { background-position: -147px 0px; }
+#file_tlbr.yui-toolbar-container .yui-toolbar-archive .yui-toolbar-icon { background-position: -167px 0px; }
+#file_tlbr.yui-toolbar-container .yui-toolbar-permissions .yui-toolbar-icon { background-position: -187px 0px; }
+#file_tlbr.yui-toolbar-container .yui-toolbar-delete .yui-toolbar-icon { background-position: -207px 0px; }
+#tpl_top_tlbr.yui-toolbar-container .yui-toolbar-new .yui-toolbar-icon { background-position: -105px 0px; }
+#tpl_top_tlbr.yui-toolbar-container .yui-toolbar-delete .yui-toolbar-icon { background-position: -207px 0px; }
+#conn_top_tlbr.yui-toolbar-container .yui-toolbar-new .yui-toolbar-icon { background-position: -105px 0px; }
+#file_srch label.srch {
+	padding: 3px 0 1px 3px;
+	background: #fff;
+	border: 1px solid #808080;
+	margin: 1px 0 3px 0.5em;
+}
+#file_srch label.srch, #file_srch #file_srch_fltr2, #file_srch #file_srch_sys2 { float: left; }
+#file_srch span.clear {
+	display: inline-block;
+	background: url(/generalAppC/javascripts/yui/assets/skins/sam/sprite.png) no-repeat scroll -6px -303px;
+	width: 13px;
+	height: 10px;
+	cursor: pointer;
+	margin: 0;
+}
+#file_srch label.srch input {
+	border: 0;
+	background: transparent;
+	color: #333;
+	font-size: 12px;
+	height: auto;
+	margin: 0;
+	padding: 0;
+}
+#file_srch_sys2.yui-checkbox-button-checked {
+	background-position: 0 -100px;
+	border-color: #808080;
+}
+#file_srch_sys2.yui-checkbox-button-checked .first-child {
+	border-color: #808080;
+}
+#file_srch_sys2.yui-checkbox-button-checked .first-child button {
+	color: #000;
+}
+
+
+#file_path,
+#fldr_bl1 {
+	height: 17px;
+	background: #fff;
+	color: #000;
+	padding: 3px 0 0 3px;
+}
+.yui-dt-hd {
+	background: #D8D8DA url(/generalAppC/javascripts/yui/assets/skins/sam/sprite.png) repeat-x scroll 0 0;
+	border-left: 0 !important;
+	position: static !important;
+}
+.yui-dt-bd {
+	border: 0 !important;
+}
+.yui-dt-scrollable .yui-dt-data tr.yui-dt-last td {
+	border-bottom: 0 !important;
+}
+.yui-dt-scrollable .yui-dt-bd table thead {
+	display: none;
+}
+.yui-dt-hd .yui-dt-col-actions {
+	border-right-color: transparent !important;
+}
+.yui-dt .yui-dt-col-actions input,
+.yui-dt .yui-dt-col-actions .yui-dt-liner div {
+	padding: 0;
+	margin: 0;
+	width: 18px;
+	height: 18px;
+	float: left;
+}
+.yui-dt .yui-dt-col-actions input,
+.yui-dt .yui-dt-col-actions div.edit,
+.yui-dt .yui-dt-col-actions div.preview,
+.yui-dt .yui-dt-col-actions div.version {
+	border: 0;
+	background: url(/controlpanel/FileManager/styles/sprite.png) no-repeat 0 0;
+}
+.yui-dt .yui-dt-col-actions input.open { background: url(/generalAppC/javascripts/yui-extras/treeview/assets/img/folders/lm.gif) no-repeat -16px -1px; }
+.yui-dt .yui-dt-col-actions input.edit { background-position: -227px 0px; }
+.yui-dt .yui-dt-col-actions input.preview { background-position: -244px 0px; }
+.yui-dt .yui-dt-col-actions input.download { background-position: -264px 0px; }
+.yui-dt .yui-dt-col-actions input.version { background-position: -283px 0px; }
+.yui-dt .yui-dt-col-actions input.delete { background-position: -209px 0px; }
+.yui-dt .yui-dt-col-actions input.duplicate { background-position: -127px 0px; }
+.yui-dt .yui-dt-col-actions input.connect { background-position: -306px 0px; }
+.yui-dt .yui-dt-col-actions div.edit { background-position: -345px 0px; }
+.yui-dt .yui-dt-col-actions div.preview { background-position: -362px 0px; }
+.yui-dt .yui-dt-col-actions div.version { background-position: -401px 0px; }
+.yui-dt td.yui-dt-col-size {
+	text-align: right;
+}
+.yui-dt-col-select .yui-dt-liner {
+	padding: 4px 5px 4px 2px;
+}
+.yui-dt-col-name .yui-dt-liner {
+	white-space: nowrap;
+}
+*:first-child+html .yui-dt-col-select .yui-dt-liner input {
+	margin-left: -3px;
+}
+.yui-dt-col-type .yui-dt-liner {
+	padding: 4px 6px 4px 4px;
+}
+.yui-dt-col-type .yui-dt-liner .img {
+	width: 18px;
+	height: 18px;
+	background: transparent url(/controlpanel/FileManager/styles/sprite.png) no-repeat -134px -21px;
+}
+.yui-dt-col-type .yui-dt-liner .img.icon--folder { background: url(/generalAppC/javascripts/yui-extras/treeview/assets/img/folders/lp.gif) no-repeat -16px -1px; }
+.yui-dt-col-type .yui-dt-liner .img.icon-jpg,
+.yui-dt-col-type .yui-dt-liner .img.icon-jpeg,
+.yui-dt-col-type .yui-dt-liner .img.icon-gif,
+.yui-dt-col-type .yui-dt-liner .img.icon-png,
+.yui-dt-col-type .yui-dt-liner .img.icon-ico,
+.yui-dt-col-type .yui-dt-liner .img.icon-bmp,
+.yui-dt-col-type .yui-dt-liner .img.icon-dwf,
+.yui-dt-col-type .yui-dt-liner .img.icon-psd,
+.yui-dt-col-type .yui-dt-liner .img.icon-psp,
+.yui-dt-col-type .yui-dt-liner .img.icon-svg,
+.yui-dt-col-type .yui-dt-liner .img.icon-tif,
+.yui-dt-col-type .yui-dt-liner .img.icon-tiff { background-position: -2px -21px; }
+.yui-dt-col-type .yui-dt-liner .img.icon-wav,
+.yui-dt-col-type .yui-dt-liner .img.icon-wave,
+.yui-dt-col-type .yui-dt-liner .img.icon-mp3,
+.yui-dt-col-type .yui-dt-liner .img.icon-aac,
+.yui-dt-col-type .yui-dt-liner .img.icon-aif,
+.yui-dt-col-type .yui-dt-liner .img.icon-aiff,
+.yui-dt-col-type .yui-dt-liner .img.icon-aifc,
+.yui-dt-col-type .yui-dt-liner .img.icon-m3u,
+.yui-dt-col-type .yui-dt-liner .img.icon-mid,
+.yui-dt-col-type .yui-dt-liner .img.icon-midi,
+.yui-dt-col-type .yui-dt-liner .img.icon-mpa,
+.yui-dt-col-type .yui-dt-liner .img.icon-ra,
+.yui-dt-col-type .yui-dt-liner .img.icon-ram,
+.yui-dt-col-type .yui-dt-liner .img.icon-wma,
+.yui-dt-col-type .yui-dt-liner .img.icon-flac { background-position: -77px -21px; }
+.yui-dt-col-type .yui-dt-liner .img.icon-zip,
+.yui-dt-col-type .yui-dt-liner .img.icon-tar,
+.yui-dt-col-type .yui-dt-liner .img.icon-gz,
+.yui-dt-col-type .yui-dt-liner .img.icon-bz2,
+.yui-dt-col-type .yui-dt-liner .img.icon-7z,
+.yui-dt-col-type .yui-dt-liner .img.icon-ace,
+.yui-dt-col-type .yui-dt-liner .img.icon-bz,
+.yui-dt-col-type .yui-dt-liner .img.icon-bzip,
+.yui-dt-col-type .yui-dt-liner .img.icon-bzip2,
+.yui-dt-col-type .yui-dt-liner .img.icon-rar,
+.yui-dt-col-type .yui-dt-liner .img.icon-taz,
+.yui-dt-col-type .yui-dt-liner .img.icon-tgz { background-position: -172px -21px; }
+.yui-dt-col-type .yui-dt-liner .img.icon-swf,
+.yui-dt-col-type .yui-dt-liner .img.icon-fla { background-position: -211px -21px; }
+.yui-dt-col-type .yui-dt-liner .img.icon-fnt,
+.yui-dt-col-type .yui-dt-liner .img.icon-fon,
+.yui-dt-col-type .yui-dt-liner .img.icon-otf,
+.yui-dt-col-type .yui-dt-liner .img.icon-ttf { background-position: -115px -21px; }
+.yui-dt-col-type .yui-dt-liner .img.icon-mdb,
+.yui-dt-col-type .yui-dt-liner .img.icon-accdb,
+.yui-dt-col-type .yui-dt-liner .img.icon-accde,
+.yui-dt-col-type .yui-dt-liner .img.icon-accdt,
+.yui-dt-col-type .yui-dt-liner .img.icon-accdr { background-position: -2px -21px; }
+.yui-dt-col-type .yui-dt-liner .img.icon-xls,
+.yui-dt-col-type .yui-dt-liner .img.icon-xlt,
+.yui-dt-col-type .yui-dt-liner .img.icon-xlsx,
+.yui-dt-col-type .yui-dt-liner .img.icon-xltx,
+.yui-dt-col-type .yui-dt-liner .img.icon-xlsm,
+.yui-dt-col-type .yui-dt-liner .img.icon-xltm,
+.yui-dt-col-type .yui-dt-liner .img.icon-xlsb,
+.yui-dt-col-type .yui-dt-liner .img.icon-xlam { background-position: -2px -21px; }
+.yui-dt-col-type .yui-dt-liner .img.icon-ppt,
+.yui-dt-col-type .yui-dt-liner .img.icon-pot,
+.yui-dt-col-type .yui-dt-liner .img.icon-pps,
+.yui-dt-col-type .yui-dt-liner .img.icon-pps,
+.yui-dt-col-type .yui-dt-liner .img.icon-pptx,
+.yui-dt-col-type .yui-dt-liner .img.icon-pptm,
+.yui-dt-col-type .yui-dt-liner .img.icon-potx,
+.yui-dt-col-type .yui-dt-liner .img.icon-potm,
+.yui-dt-col-type .yui-dt-liner .img.icon-ppam,
+.yui-dt-col-type .yui-dt-liner .img.icon-ppsx,
+.yui-dt-col-type .yui-dt-liner .img.icon-ppsm { background-position: -2px -21px; }
+.yui-dt-col-type .yui-dt-liner .img.icon-doc,
+.yui-dt-col-type .yui-dt-liner .img.icon-dot,
+.yui-dt-col-type .yui-dt-liner .img.icon-docx,
+.yui-dt-col-type .yui-dt-liner .img.icon-docm,
+.yui-dt-col-type .yui-dt-liner .img.icon-dotx,
+.yui-dt-col-type .yui-dt-liner .img.icon-dotm { background-position: -2px -21px; }
+.yui-dt-col-type .yui-dt-liner .img.icon-pdf { background-position: -302px -21px; }
+.yui-dt-col-type .yui-dt-liner .img.icon-txt,
+.yui-dt-col-type .yui-dt-liner .img.icon-dat,
+.yui-dt-col-type .yui-dt-liner .img.icon-log,
+.yui-dt-col-type .yui-dt-liner .img.icon-csv,
+.yui-dt-col-type .yui-dt-liner .img.icon-rtf,
+.yui-dt-col-type .yui-dt-liner .img.icon-ini { background-position: -266px -21px; }
+.yui-dt-col-type .yui-dt-liner .img.icon-htm,
+.yui-dt-col-type .yui-dt-liner .img.icon-html,
+.yui-dt-col-type .yui-dt-liner .img.icon-shtm,
+.yui-dt-col-type .yui-dt-liner .img.icon-shtml,
+.yui-dt-col-type .yui-dt-liner .img.icon-css,
+.yui-dt-col-type .yui-dt-liner .img.icon-xht,
+.yui-dt-col-type .yui-dt-liner .img.icon-xhtml { background-position: -321px -21px; }
+.yui-dt-col-type .yui-dt-liner .img.icon-asp,
+.yui-dt-col-type .yui-dt-liner .img.icon-aspx,
+.yui-dt-col-type .yui-dt-liner .img.icon-cfm,
+.yui-dt-col-type .yui-dt-liner .img.icon-cgi,
+.yui-dt-col-type .yui-dt-liner .img.icon-inc,
+.yui-dt-col-type .yui-dt-liner .img.icon-js,
+.yui-dt-col-type .yui-dt-liner .img.icon-pl,
+.yui-dt-col-type .yui-dt-liner .img.icon-pm,
+.yui-dt-col-type .yui-dt-liner .img.icon-py,
+.yui-dt-col-type .yui-dt-liner .img.icon-sql { background-position: -230px -21px; }
+.yui-dt-col-type .yui-dt-liner .img.icon-phtml,
+.yui-dt-col-type .yui-dt-liner .img.icon-phtm,
+.yui-dt-col-type .yui-dt-liner .img.icon-php,
+.yui-dt-col-type .yui-dt-liner .img.icon-php3,
+.yui-dt-col-type .yui-dt-liner .img.icon-php4,
+.yui-dt-col-type .yui-dt-liner .img.icon-php5 { background-position: -96px -21px; }
+.yui-dt-col-type .yui-dt-liner .img.icon-htaccess,
+.yui-dt-col-type .yui-dt-liner .img.icon-htpasswd { background-position: -248px -21px; }
+.yui-dt-col-type .yui-dt-liner .img.icon-avi,
+.yui-dt-col-type .yui-dt-liner .img.icon-mpg,
+.yui-dt-col-type .yui-dt-liner .img.icon-mpeg,
+.yui-dt-col-type .yui-dt-liner .img.icon-wmv,
+.yui-dt-col-type .yui-dt-liner .img.icon-3gp,
+.yui-dt-col-type .yui-dt-liner .img.icon-asf,
+.yui-dt-col-type .yui-dt-liner .img.icon-mp4,
+.yui-dt-col-type .yui-dt-liner .img.icon-rm { background-position: -211px -21px; }
+.yui-dt-col-type .yui-dt-liner .img.icon-qt,
+.yui-dt-col-type .yui-dt-liner .img.icon-mov { background-position: -284px -21px; }
+.yui-dt-col-type .yui-dt-liner .img.icon-xml,
+.yui-dt-col-type .yui-dt-liner .img.icon-xsl,
+.yui-dt-col-type .yui-dt-liner .img.icon-xslt { background-position: -2px -21px; }
+.yui-skin-sam .yui-layout-doc .yui-layout-unit .yui-layout-bd {
+	background: #fff !important;
+}
+.yui-skin-sam .yui-layout-doc .yui-layout-doc .yui-layout-unit-center .yui-layout-bd {
+	border-top:0 !important;
+}
+#fldr_tlbr .yui-toolbar-subcont, #file_tlbr .yui-toolbar-subcont {
+	border: 0;
+}
+#fldr_ftp button {
+	outline: none;
+}
+#fldr_ftp button em {
+	font-style: normal;
+	display: block;
+	text-align: left;
+	white-space: nowrap;
+	width: 150px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+#fldr_cntr {
+	border-top: 1px solid #808080;
+	height: 419px;
+	overflow: auto;
+}
+#fldr_trvw {
+	width: 500px;
+}
+#fldr_trvw .icon-root {
+	display: block;
+	height: 22px;
+	padding-left: 20px;
+	padding-top:4px;
+	margin-bottom:-4px;
+	background: url(/controlpanel/FileManager/styles/sprite.png) no-repeat -428px 1px;
+}
+#fldr_trvw .ygtvlabel { white-space:nowrap;background:transparent;font-size:0.95em; }
+#fldr_trvw .current.ygtvcontent { background-color: #c0e0e0; }
+#tpl_table.yui-dt table, #conn_table.yui-dt table {
+	border-width: 0 0 1px 0;
+}
+#tpl_layout .yui-layout-unit-center .yui-layout-bd, #conn_layout .yui-layout-unit-center .yui-layout-bd {
+	border-top-width: 0;
+}
+#tpl_top_tlbr, #conn_top_tlbr {
+	padding-top: 2px;
+}
+
+#settings { padding: 1em; }
