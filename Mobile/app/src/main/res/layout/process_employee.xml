@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:background="#F3F3F4"
+              android:padding="10dp"
+              android:baselineAligned="false"
+              android:clickable="false">
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.35"
+                android:text="Boat"
+                android:textSize="20dp"
+                android:textColor="#000"/>
+
+        <Spinner android:id="@+id/spinProducts"
+                 android:layout_width="0dp"
+                 android:layout_weight="0.65"
+                 android:textColor="#000"
+                 android:layout_height="38dip"
+                 android:background="#D8D8D8"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.35"
+                android:text="Name"
+                android:textSize="20dp"
+                android:textColor="#000"/>
+
+        <EditText
+                android:id="@+id/txtName"
+                android:layout_width="0dp"
+                android:layout_height="38dip"
+                android:layout_weight="0.65"
+                android:ems="10"
+                android:textColor="#000"
+                android:background="#D8D8D8"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.35"
+                android:text="Group"
+                android:textSize="20dp"
+                android:textColor="#000"/>
+
+        <Spinner android:id="@+id/spinProcess"
+                 android:layout_width="0dp"
+                 android:layout_height="38dip"
+                 android:layout_weight="0.65"
+                 android:textColor="#000"
+                 android:spinnerMode="dropdown"
+                 android:background="#D8D8D8"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.35"
+                android:text="Materials"
+                android:textSize="20dp"
+                android:textColor="#000"
+                android:id="@+id/txtMaterials"/>
+
+        <EditText
+                android:id="@+id/lblMaterials"
+                android:layout_width="0dp"
+                android:layout_height="38dip"
+                android:layout_weight="0.65"
+                android:ems="10"
+                android:editable="false"
+                android:text="Select Materials"
+                android:textColor="#000"
+                android:background="#D8D8D8"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.35"
+                android:textSize="20dp"
+                android:text="Start Time"
+                android:textColor="#000"/>
+
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.65"
+                android:orientation="horizontal">
+            <EditText android:layout_width="wrap_content"
+                      android:layout_height="38dip"
+                      android:layout_weight="1"
+                      android:id="@+id/txtStartDate"
+                      android:hint="mm/dd/yyyy"
+                      android:textColorHint="#888888"
+                      android:textColor="#000"
+                      android:background="#D8D8D8"
+                      android:paddingLeft="3dp"
+                      android:paddingRight="3dp"
+                    />
+
+            <EditText android:layout_width="wrap_content"
+                      android:layout_height="38dip"
+                      android:layout_weight="1"
+                      android:id="@+id/txtStartTime"
+                      android:hint="hh:mm"
+                      android:textColorHint="#888888"
+                      android:textColor="#000"
+                      android:background="#D8D8D8"
+                      android:paddingLeft="3dp"
+                      android:paddingRight="3dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.35"
+                android:textSize="20dp"
+                android:text="End Time"
+                android:textColor="#000"/>
+
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.65"
+                android:orientation="horizontal">
+            <EditText android:layout_width="wrap_content"
+                      android:layout_height="38dip"
+                      android:layout_weight="1"
+                      android:id="@+id/txtEndDate"
+                      android:hint="mm/dd/yyyy"
+                      android:textColorHint="#888888"
+                      android:textColor="#000"
+                      android:background="#D8D8D8"
+                      android:paddingLeft="3dp"
+                      android:paddingRight="3dp"/>
+
+            <EditText android:layout_width="wrap_content"
+                      android:layout_height="38dip"
+                      android:layout_weight="1"
+                      android:id="@+id/txtEndTime"
+                      android:hint="hh:mm"
+                      android:textColorHint="#888888"
+                      android:textColor="#000"
+                      android:background="#D8D8D8"
+                      android:paddingLeft="3dp"
+                      android:paddingRight="3dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="50dp">
+
+        <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.40"/>
+
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.60"
+                android:orientation="horizontal">
+
+            <Button
+                    android:id="@+id/btnSubmit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="5"
+                    android:background="#18A689"
+                    android:text="Add"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

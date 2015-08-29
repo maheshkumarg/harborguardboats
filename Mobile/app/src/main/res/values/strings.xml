@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">HarborGuardBoats</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_employee">Employee</string>
+    <string name="title_activity_admin">Admin</string>
+    <string name="materials">Materials</string>
+    <string name="process">Process</string>
+    <string name="profile">Profile</string>
+    <string name="logout">Logout</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="material_drpdwn_def_text">Select Materials</string>
+</resources>
